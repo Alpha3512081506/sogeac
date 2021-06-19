@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CommandController!
+{% endblock %}
+
+{% block body %}
+	<div class="row m-3">
+		<div class="col-12">
+			<div class="d-flex justify-content-between">
+				<h3>BON DE COMMANDE</h3>
+				<button type="button" class="btn btn-outline-secondary ">creer un bon de commande</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="table-responsive">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Ref</th>
+					<th>Description</th>
+					<th>Quantitè</th>
+					<th>Prix Unitaire</th>
+					<th>Remise(%)</th>
+					<th>Totale HT</th>
+					<th>TauxTVA(%)</th>
+					<th>Total TTC</th>
+					<th>Date De Creation</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>article#1</td>
+					<td>Computer MacBook</td>
+					<td>7</td>
+					<td>2000000 gnf</td>
+					<td>2%</td>
+					<td>1800000</td>
+					<td>18%</td>
+					<td>2300000 gnf</td>
+					<td>24-janvier-2021</td>
+					<td>
+						<button type="button" class="btn btn-outline-primary">
+							<i class="fa fa-pencil"></i>
+						</button>
+						<button type="button" class="btn btn-outline-danger">
+							<i class="fa fa-trash-o"></i>
+						</button>
+					</td>
+
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+{% endblock %}
